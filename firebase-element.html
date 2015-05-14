@@ -249,7 +249,7 @@ Element wrapper for the Firebase Web API (http://firebase.com).
       ref.on('child_changed', this._onRefChildChanged, this._onRefCancel, this);
     },
 
-    _stopListening: function(ref) {
+    _stopListeningTo: function(ref) {
       ref.off('value', this._onRefValue, this._onRefCancel, this);
       ref.off('child_added', this._onRefChildAdded, this._onRefCancel, this);
       ref.off('child_removed', this._onRefChildRemoved, this._onRefCancel, this);
